@@ -1,0 +1,115 @@
+/*-----NOTES FOR PARTNER-----
+WIP means Work in Progress. Please surround code you are modfiying with the label.
+
+
+-----NOTES FOR PARTNER-----*/
+
+$dark: #111;
+$light: #aaa;
+$background: #43210d;
+
+//removes any superfluous margins
+* {
+	margin: 0;
+}
+
+body {
+	text-align: center;
+	background-image: url("../images/background-wood.jpg");
+	background-size: cover;
+	color: $light;
+	background-color: $background;
+}
+
+//-----WIP-----
+header {
+	background-color: $dark;
+	margin: 0;
+	h1 {
+		margin: 0;
+	}
+}
+// Black board where the cards are set up
+#game-board {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $dark;
+	// justify-content: center;
+	// align-items: stretch;
+	// flex-wrap: wrap;
+	// gap: 0;
+	min-width: 50px;
+	min-height: 50px;
+	margin: 0;
+}
+#scoreboard {
+	min-width: 300px;
+	min-height: 300px;
+	background-color: #222;
+	color: #fff;
+}
+main {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 50px 0;
+	overflow: hidden;
+}
+.card-active {
+	display: hidden;
+	text-align: center;
+	background-color: #eee;
+}
+.card {
+	width: 125px;
+	height: 175px;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	user-select: none;
+	&:hover {
+		cursor: pointer;
+	}
+	h2 {
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 10px;
+	}
+	img {
+		width: 80%;
+		height: 80%;
+	}
+}
+.hidden {
+	display: none;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+.green {
+	// border: 1px solid green;
+	min-width: 20px;
+	min-height: 20px;
+}
+.red {
+	// border: 1px solid red;
+	min-width: 20px;
+	min-height: 20px;
+}
+
+//-----WIP-----
+
+footer {
+	margin-bottom: -10px;
+	padding: 15px;
+	background-color: $dark;
+	position: sticky;
+	top: 0px;
+	ul {
+		display: flex;
+		justify-content: space-around;
+	}
+}
