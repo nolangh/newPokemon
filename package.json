@@ -1,8 +1,0 @@
-{
-  "name": "newpokemon",
-  "module": "pokeSet.js",
-  "type": "module",
-  "devDependencies": {
-    "bun-types": "^0.1.0"
-  }
-}
