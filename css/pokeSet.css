@@ -106,7 +106,7 @@ header {
 
 button{
 	width: 6em;
-	height: 2em;
+	height: auto;
 	font-family: 'Press Start 2P', cursive;
 	background: var(--yellow);
 	color: var(--blue);

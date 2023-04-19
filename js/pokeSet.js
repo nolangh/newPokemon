@@ -1,21 +1,11 @@
 //const apiKey = "ef72570ff371408f9668e414353b7b2e";
-const apiKey = process.env.pokeKey;
+const apiKey = import.meta.env.VITE_apiKey;
 const apiSets = "https://api.pokemontcg.io/v2/sets";
 const cardContainer = document.getElementById("card-cont");
 const reset = document.getElementById("reset-btn");
 const pos = document.getElementById("selectSet");
 let cardSets = [];
 let setName;
-console.log(apiKey);
-
-const server = Bun.serve({
-	port: 3000,
-	fetch(req) {
-		return new Response(`Bun!`);
-	},
-});
-
-console.log(`Listening on http://localhost:${server.port}...`);
 
 /* -----------------------------ANCHOR Event Listeners ----------------------------- */
 
