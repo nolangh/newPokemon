@@ -1,0 +1,156 @@
+:root {
+	--blue: #3b4cca;
+	--yellow: #ffde00;
+	--red: #ff0000;
+	--button-font: font-family: 'Press Start 2P', cursive;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	
+}
+
+
+/* -------------------------------- ScrollBar ------------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 1.3em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--yellow);
+  border: 4px solid var(--blue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
+}
+
+
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.main-cont {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	background-color: var(--red);
+	/* background-color: #ff0000; */
+	width: 100%;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 5em;
+	margin-top: 5em;
+	margin-bottom: 2em;
+	color: var(--yellow);
+}
+
+
+.checkbox {
+	width: 25%;
+	margin-left: 2em;
+}
+
+/* ----------------------------- select section ----------------------------- */
+
+.select-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--red);
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+#selectSet {
+	width: 15%;
+	height: 2em;
+	font-family: 'Press Start 2P', cursive;;
+	background: var(--yellow);
+	color: var(--blue);
+	border: 2px solid var(--blue);
+	text-align: center;
+}
+
+/* ------------------------------ Buttons ------------------------------ */
+
+button{
+	width: 6em;
+	height: 2em;
+	font-family: 'Press Start 2P', cursive;
+	background: var(--yellow);
+	color: var(--blue);
+	border: 2px solid var(--blue);
+}
+
+.home-button {
+	margin-right: 3em;
+}
+
+#reset-btn {
+	margin-left: 3em;
+
+}
+
+/* ------------------------------ Card section ------------------------------ */
+
+.set-cont {
+	background-color: var(--red);
+	width: 100%;
+	padding-left: 3em;
+	padding-right: 3em;
+	justify-content: center;
+}
+
+#card-cont {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background: var(--red);
+	margin: 0;
+	padding: 0;
+}
+
+/* ---------------------------------- Cards --------------------------------- */
+.card {
+	width: 15rem;
+	height: 22rem;
+	margin-bottom: 2em;
+	background: var(--red);
+}
+
+.card-img-top {
+	width: 15rem;
+	height: 22rem;
+}
